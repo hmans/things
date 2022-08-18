@@ -1,5 +1,11 @@
 # @hmans/r3f-animate
 
+## 0.0.4
+
+### Patch Changes
+
+- 558c37b: Add `rotate` and `float` animators.
+
 ## 0.0.3
 
 ### Patch Changes
