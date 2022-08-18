@@ -1,6 +1,6 @@
 # @hmans/things
 
-A loose collection of microlibraries that didn't warrant a separate repository. Most of these are centered around building games with React-Three-Fiber, and should be considered **experimental in nature**, with the possibility of eventually extracting some of the more useful and stable ones into separate projects later.
+A loose collection of microlibraries that didn't warrant a separate repository. Most of these are centered around building games with @react-three/fiber, and should be considered **experimental in nature**, with the possibility of eventually extracting some of the more useful and stable ones into separate projects later.
 
 ## Packages
 
