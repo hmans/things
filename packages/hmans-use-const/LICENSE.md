@@ -1,19 +1,3 @@
-# @hmans/things
-
-A loose collection of microlibraries that didn't warrant a separate repository. Most of these are centered around building games with @react-three/fiber, and should be considered **experimental in nature**, with the possibility of eventually extracting some of the more useful and stable ones into separate projects later.
-
-## Packages
-
-- **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**
-  - Utility components for animating R3F scene objects
-- **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**
-  - Utility components and hooks for hooking into R3F component lifecycles
-- **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**
-  - A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
-
-## License
-
-```
 Copyright (c) 2022 Hendrik Mans
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -34,4 +18,3 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
