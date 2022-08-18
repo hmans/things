@@ -1,6 +1,13 @@
 # @hmans/r3f-lifecycle
 
-## Lifecycle Helpers for React-Three-Fiber
+## Summary
+
+This package provides a small collection of convenience hooks and components that allow you to hook callbacks into the various lifecycle stages of @react-three/fiber components.
+
+## Motivation
+
+- To provide both hooks and component versions of the same functionality, to let the user stay in comfy JSX land _just a little longer_.
+- To provide these lifecycle utility components and hooks in the language of game engines, even though they are just thin wrappers around `useFrame` and `useEffect`.
 
 ### OnAwake and useOnAwake
 
