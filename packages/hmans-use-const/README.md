@@ -2,7 +2,7 @@
 
 ## Summary
 
-`useConst`, a simple hook that allows you to define a contant value that will never change during the lifetime of the component.
+`useConst`, a simple hook that allows you to define a constant value that will never change during the lifetime of the component.
 
 ```tsx
 import { useConst } from "@hmans/use-const"
