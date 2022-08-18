@@ -5,9 +5,9 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
 ## Packages
 
 - **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**
-  - Utility components for animating R3F scene objects
+  - Utility components for animating R3F scene objects using declarative JSX and functional composition.
 - **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**
-  - Utility components and hooks for hooking into R3F component lifecycles
+  - Utility components and hooks for hooking into R3F component lifecycles, for when `useEffect` is still a little too scary.
 - **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**
   - A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
 
