@@ -22,7 +22,7 @@ function Thingy() {
 }
 ```
 
-**Pro tip:** Since the animation callbacks are just normal functions, how about providing higher-order functions for specific animation types?
+Since the animation callbacks are just normal functions, how about providing higher-order functions for specific animation types?
 
 ```tsx
 const autoRotate = (x: number, y: number, z: number) => (
@@ -45,3 +45,12 @@ function Thingy() {
   )
 }
 ```
+
+## Animators
+
+This package also provides a couple of higher-order function factories that you can use together with `<Animate>`.
+
+- `rotate(xs, ys, zs)`
+  - Returns an animation function that rotates the object around the x, y, and z axes, with the respective speeds (radians per second) passed in the arguments.
+- `float([fx, fy, fz], [ax, ay, az])`
+  - Returns an animation function that floats the object around, using the `fx`, `fy` and `fz` frequencies, and `ax`, `ay` and `az` amplitudes.
