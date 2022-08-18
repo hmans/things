@@ -10,6 +10,8 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
   - Utility components and hooks for hooking into R3F component lifecycles, for when `useEffect` is still a little too scary.
 - **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**
   - A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
+- **[@hmans/use-rerender](https://github.com/hmans/things/tree/main/packages/hmans-use-rerender)**
+  - A hook that returns a function that, when called, will cause the component to re-render, no questions asked.
 - **[@hmans/use-version](https://github.com/hmans/things/tree/main/packages/hmans-use-version)**
   - A hook returning a numerical version number, and a function that will bump it up by one. Useful in situations where components need to be explicitly re-rendered, and side-effects need to react to this.
 
