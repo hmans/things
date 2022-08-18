@@ -37,18 +37,5 @@
     "react": ">=18.1.0",
     "react-dom": ">=18.1.0",
     "three": ">=0.141.0"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react",
-      [
-        "@babel/preset-typescript",
-        {
-          "isTSX": true,
-          "allExtensions": true
-        }
-      ]
-    ]
   }
 }
