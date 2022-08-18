@@ -7,7 +7,7 @@
     "url": "https://hendrik.mans.de"
   },
   "description": "Lifecycle helpers for react-three-fiber.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/hmans-r3f-lifecycle.cjs.js",
   "module": "dist/hmans-r3f-lifecycle.esm.js",
   "types": "dist/hmans-r3f-lifecycle.cjs.d.ts",

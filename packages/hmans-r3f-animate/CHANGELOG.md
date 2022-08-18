@@ -1,5 +1,12 @@
 # @hmans/r3f-animate
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [0c63a4d]
+  - @hmans/r3f-lifecycle@0.0.4
+
 ## 0.0.2
 
 ### Patch Changes
