@@ -1,7 +1,7 @@
+import { useOnUpdate } from "@hmans/r3f-lifecycle"
 import { GroupProps, RootState } from "@react-three/fiber"
 import React, { useRef } from "react"
 import { Group } from "three"
-import { useOnUpdate } from "./OnUpdate"
 
 export type AnimateUpdateCallback = (
   group: Group,
