@@ -7,7 +7,7 @@
     "url": "https://hendrik.mans.de"
   },
   "description": "Animation helpers for react-three-fiber.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/hmans-r3f-animate.cjs.js",
   "module": "dist/hmans-r3f-animate.esm.js",
   "types": "dist/hmans-r3f-animate.cjs.d.ts",
@@ -69,6 +69,6 @@
     ]
   },
   "dependencies": {
-    "@hmans/r3f-lifecycle": "^0.0.2"
+    "@hmans/r3f-lifecycle": "^0.0.3"
   }
 }
