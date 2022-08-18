@@ -4,9 +4,13 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
 
 ## Packages
 
-- **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**
+- **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)** ![Version](https://img.shields.io/npm/v/@hmans/r3f-animate?style=flat-square)
+  ![Downloads](https://img.shields.io/npm/dt/@hmans/r3f-animate.svg?style=flat-square)
+  ![Bundle Size](https://img.shields.io/bundlephobia/min/@hmans/r3f-animate?label=bundle%20size&style=flat-square)
   - Utility components for animating R3F scene objects
-- **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**
+- **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)** ![Version](https://img.shields.io/npm/v/@hmans/r3f-lifecycle?style=flat-square)
+  ![Downloads](https://img.shields.io/npm/dt/@hmans/r3f-lifecycle.svg?style=flat-square)
+  ![Bundle Size](https://img.shields.io/bundlephobia/min/@hmans/r3f-lifecycle?label=bundle%20size&style=flat-square)
   - Utility components and hooks for hooking into R3F component lifecycles
 
 ## License
