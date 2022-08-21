@@ -16,7 +16,7 @@ const SharedMaterial = sharedResource(() => (
 ))
 
 const Game = () => (
-  <group position-y={1.5}>
+  <group>
     {/* Somewhere in your app, create the actual resource.
     This element will control the lifetime of the actual resource;
     if it gets unmounted, the resource will be destroyed. */}
