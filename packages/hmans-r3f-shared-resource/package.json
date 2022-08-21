@@ -1,0 +1,38 @@
+{
+  "name": "@hmans/r3f-shared-resource",
+  "private": false,
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hendrik.mans.de"
+  },
+  "description": "A component decorator that makes it easy to create and re-use react-three-fiber resources like materials and geometries.",
+  "version": "0.0.1",
+  "main": "dist/hmans-r3f-shared-resource.cjs.js",
+  "module": "dist/hmans-r3f-shared-resource.esm.js",
+  "types": "dist/hmans-r3f-shared-resource.cjs.d.ts",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "devDependencies": {
+    "@react-three/fiber": "^8.3.1",
+    "@types/react": "^18.0.17",
+    "@types/three": "^0.143.0",
+    "react": "^18.1.0",
+    "three": "^0.143.0",
+    "typescript": "^4.7.3"
+  },
+  "peerDependencies": {
+    "@react-three/fiber": ">=8.0.27",
+    "react": ">=18.1.0",
+    "three": ">=0.141.0"
+  },
+  "dependencies": {
+    "react-merge-refs": "^2.0.1",
+    "statery": "^0.6.0-next.2"
+  }
+}
