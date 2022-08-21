@@ -10,6 +10,8 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
   - Utility components for animating R3F scene objects using declarative JSX and functional composition.
 - **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**
   - Utility components and hooks for hooking into R3F component lifecycles, for when `useEffect` is still a little too scary.
+- **[@hmans/r3f-shared-resource](https://github.com/hmans/things/tree/main/packages/hmans-r3f-shared-resource)**
+  - A component decorator that makes it easy to create and re-use react-three-fiber resources like materials and geometries.
 
 #### React:
 
