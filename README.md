@@ -17,6 +17,8 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
 
 - **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**
   - A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
+- **[@hmans/use-list](https://github.com/hmans/things/tree/main/packages/hmans-use-list)**
+  - A simple hook that will create and return a reactive list of items, along with functions to add and remove items to and from the list.
 - **[@hmans/use-rerender](https://github.com/hmans/things/tree/main/packages/hmans-use-rerender)**
   - A hook that returns a function that, when called, will cause the component to re-render, no questions asked.
 - **[@hmans/use-version](https://github.com/hmans/things/tree/main/packages/hmans-use-version)**
