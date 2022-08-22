@@ -6,23 +6,23 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
 
 #### @react-three/fiber:
 
-- **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**
-  - Utility components for animating R3F scene objects using declarative JSX and functional composition.
-- **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**
-  - Utility components and hooks for hooking into R3F component lifecycles, for when `useEffect` is still a little too scary.
-- **[@hmans/r3f-shared-resource](https://github.com/hmans/things/tree/main/packages/hmans-r3f-shared-resource)**
-  - A component decorator that makes it easy to create and re-use react-three-fiber resources like materials and geometries.
+- **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**  
+  Utility components for animating R3F scene objects using declarative JSX and functional composition.
+- **[@hmans/r3f-lifecycle](https://github.com/hmans/things/tree/main/packages/hmans-r3f-lifecycle)**  
+  Utility components and hooks for hooking into R3F component lifecycles, for when `useEffect` is still a little too scary.
+- **[@hmans/r3f-shared-resource](https://github.com/hmans/things/tree/main/packages/hmans-r3f-shared-resource)**  
+  A component decorator that makes it easy to create and re-use react-three-fiber resources like materials and geometries.
 
 #### React:
 
-- **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**
-  - A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
-- **[@hmans/use-list](https://github.com/hmans/things/tree/main/packages/hmans-use-list)**
-  - A simple hook that will create and return a reactive list of items, along with functions to add and remove items to and from the list.
-- **[@hmans/use-rerender](https://github.com/hmans/things/tree/main/packages/hmans-use-rerender)**
-  - A hook that returns a function that, when called, will cause the component to re-render, no questions asked.
-- **[@hmans/use-version](https://github.com/hmans/things/tree/main/packages/hmans-use-version)**
-  - A hook that returns a numerical version number, and a function that will bump it up by one. Useful in situations where components need to be explicitly re-rendered, and side-effects need to react to this.
+- **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**  
+  A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
+- **[@hmans/use-list](https://github.com/hmans/things/tree/main/packages/hmans-use-list)**  
+  A simple hook that will create and return a reactive list of items, along with functions to add and remove items to and from the list.
+- **[@hmans/use-rerender](https://github.com/hmans/things/tree/main/packages/hmans-use-rerender)**  
+  A hook that returns a function that, when called, will cause the component to re-render, no questions asked.
+- **[@hmans/use-version](https://github.com/hmans/things/tree/main/packages/hmans-use-version)**  
+  A hook that returns a numerical version number, and a function that will bump it up by one. Useful in situations where components need to be explicitly re-rendered, and side-effects need to react to this.
 
 ## License
 
