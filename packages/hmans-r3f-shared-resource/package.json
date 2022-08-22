@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "react-merge-refs": "^2.0.1",
-    "statery": "^0.6.0-next.2"
+    "statery": "^0.6.0-0"
   }
 }
