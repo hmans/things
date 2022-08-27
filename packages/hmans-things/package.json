@@ -1,0 +1,24 @@
+{
+  "name": "@hmans/things",
+  "private": false,
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hendrik.mans.de"
+  },
+  "description": "The complete collection of hmans' things.",
+  "version": "0.0.1",
+  "main": "dist/hmans-things.cjs.js",
+  "module": "dist/hmans-things.esm.js",
+  "types": "dist/hmans-things.cjs.d.ts",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

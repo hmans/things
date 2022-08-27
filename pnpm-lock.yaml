@@ -84,6 +84,12 @@ importers:
       three: 0.143.0
       typescript: 4.8.2
 
+  packages/hmans-things:
+    specifiers:
+      typescript: ^4.7.3
+    devDependencies:
+      typescript: 4.8.2
+
   packages/hmans-use-const:
     specifiers:
       '@types/react': ^18.0.17
