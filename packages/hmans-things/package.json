@@ -20,5 +20,14 @@
   "sideEffects": false,
   "devDependencies": {
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@hmans/r3f-animate": "workspace:^0.0.4",
+    "@hmans/r3f-lifecycle": "workspace:^0.0.4",
+    "@hmans/r3f-shared-resource": "workspace:^0.0.1",
+    "@hmans/use-const": "workspace:^0.0.1",
+    "@hmans/use-list": "workspace:^0.0.1",
+    "@hmans/use-rerender": "workspace:^0.0.2",
+    "@hmans/use-version": "workspace:^0.0.2"
   }
 }

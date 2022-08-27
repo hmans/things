@@ -86,7 +86,22 @@ importers:
 
   packages/hmans-things:
     specifiers:
+      '@hmans/r3f-animate': workspace:^0.0.4
+      '@hmans/r3f-lifecycle': workspace:^0.0.4
+      '@hmans/r3f-shared-resource': workspace:^0.0.1
+      '@hmans/use-const': workspace:^0.0.1
+      '@hmans/use-list': workspace:^0.0.1
+      '@hmans/use-rerender': workspace:^0.0.2
+      '@hmans/use-version': workspace:^0.0.2
       typescript: ^4.7.3
+    dependencies:
+      '@hmans/r3f-animate': link:../hmans-r3f-animate
+      '@hmans/r3f-lifecycle': link:../hmans-r3f-lifecycle
+      '@hmans/r3f-shared-resource': link:../hmans-r3f-shared-resource
+      '@hmans/use-const': link:../hmans-use-const
+      '@hmans/use-list': link:../hmans-use-list
+      '@hmans/use-rerender': link:../hmans-use-rerender
+      '@hmans/use-version': link:../hmans-use-version
     devDependencies:
       typescript: 4.8.2
 
