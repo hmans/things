@@ -4,6 +4,8 @@ A loose collection of microlibraries that didn't warrant a separate repository. 
 
 ## Packages
 
+Install the `@hmans/things` package to get everything that is in this repository. Alternatively, just install the packages you need:
+
 #### @react-three/fiber:
 
 - **[@hmans/r3f-animate](https://github.com/hmans/things/tree/main/packages/hmans-r3f-animate)**  
