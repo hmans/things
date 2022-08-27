@@ -28,12 +28,12 @@
   "scripts": {
     "build": "preconstruct build",
     "clean:vite": "rimraf **/node_modules/.vite",
-    "dev": "yarn examples",
-    "examples": "yarn clean:vite && preconstruct dev && cd apps/examples/ && yarn dev",
+    "dev": "pnpm examples",
+    "examples": "pnpm clean:vite && preconstruct dev && cd apps/examples/ && pnpm dev",
     "postinstall": "preconstruct dev && manypkg check",
     "test": "jest --passWithNoTests",
-    "ci": "preconstruct validate && manypkg check && yarn build && yarn test",
-    "release": "yarn ci && yarn changeset publish"
+    "ci": "preconstruct validate && manypkg check && pnpm build && pnpm test",
+    "release": "pnpm ci && pnpm changeset publish"
   },
   "dependencies": {
     "@babel/core": "^7.18.10",
@@ -49,6 +49,6 @@
     "ts-jest": "^28.0.8"
   },
   "stackblitz": {
-    "startCommand": "cd apps/examples && yarn dev"
+    "startCommand": "cd apps/examples && pnpm dev"
   }
 }
