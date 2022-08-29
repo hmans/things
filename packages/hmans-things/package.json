@@ -7,7 +7,7 @@
     "url": "https://hendrik.mans.de"
   },
   "description": "The complete collection of hmans' things.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/hmans-things.cjs.js",
   "module": "dist/hmans-things.esm.js",
   "types": "dist/hmans-things.cjs.d.ts",
@@ -25,7 +25,7 @@
     "@hmans/r3f-animate": "^0.0.4",
     "@hmans/r3f-lifecycle": "^0.0.4",
     "@hmans/r3f-shared-resource": "^0.0.1",
-    "@hmans/types": "^0.0.2",
+    "@hmans/types": "^0.0.3",
     "@hmans/use-const": "^0.0.1",
     "@hmans/use-list": "^0.0.1",
     "@hmans/use-rerender": "^0.0.2",
