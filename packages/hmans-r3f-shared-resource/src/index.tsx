@@ -1,12 +1,15 @@
-import React, { cloneElement, FC } from "react"
+import React, { cloneElement, FC, useLayoutEffect, useRef } from "react"
 import { mergeRefs } from "react-merge-refs"
 import { makeStore, useStore } from "statery"
-import { BufferGeometry, Material } from "three"
 
 export const sharedResource = <P extends any>(component: FC<P>) => {
   const store = makeStore<{ instance?: any }>({})
 
-  const Resource = (props: P) => {
+  /**
+   * Mounts the shared resource. This component will create the actual
+   * resource and store a reference to it in its local store.
+   */
+  const Mount = (props: P) => {
     const element = component(props)
     if (!element) return null
 
@@ -18,24 +21,31 @@ export const sharedResource = <P extends any>(component: FC<P>) => {
     })
   }
 
-  const Use = () => {
+  /**
+   * Use the shared resource. This requires the resource to be mounted
+   * through the `Mount` component.
+   */
+  const Use = ({ attach = "material" }: { attach?: string }) => {
+    /* Fetch the instance from the store, reactively */
     const { instance } = useStore(store)
 
-    /*
-    In a future R3F version, the following will no longer be necessary.
-    https://github.com/pmndrs/react-three-fiber/pull/2449
-    */
-    const attach =
-      instance instanceof Material
-        ? "material"
-        : instance instanceof BufferGeometry
-        ? "geometry"
-        : undefined
+    const group = useRef<any>(null!)
 
-    return instance ? <primitive object={instance} attach={attach} /> : null
+    useLayoutEffect(() => {
+      if (!instance) return
+
+      const { parent } = group.current.__r3f
+      if (!parent) return
+
+      parent[attach] = instance
+    }, [instance])
+
+    /* We're going to add a group to the scene so we can figure out
+    the parent of the material. This is a bit hacky, but it works.
+    With a bit of luck, we'll be able to tune this with a future
+    version of R3F. */
+    return <group ref={group} />
   }
 
-  Use.Resource = Resource
-
-  return Use
+  return { Mount, Use }
 }
