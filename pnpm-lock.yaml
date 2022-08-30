@@ -37,15 +37,17 @@ importers:
       '@types/react': ^18.0.17
       '@types/three': ^0.143.0
       react: ^18.1.0
+      react-dom: ^18.1.0
       three: ^0.143.0
       typescript: ^4.7.3
     dependencies:
       '@hmans/r3f-lifecycle': link:../hmans-r3f-lifecycle
     devDependencies:
-      '@react-three/fiber': 8.6.0_react@18.2.0+three@0.143.0
+      '@react-three/fiber': 8.6.0_f72olm6mn3unzgg4exeiaoxanm
       '@types/react': 18.0.17
       '@types/three': 0.143.1
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       three: 0.143.0
       typescript: 4.8.2
 
@@ -53,15 +55,19 @@ importers:
     specifiers:
       '@react-three/fiber': ^8.3.1
       '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
       '@types/three': ^0.143.0
       react: ^18.1.0
+      react-dom: ^18.1.0
       three: ^0.143.0
       typescript: ^4.7.3
     devDependencies:
-      '@react-three/fiber': 8.6.0_react@18.2.0+three@0.143.0
+      '@react-three/fiber': 8.6.0_f72olm6mn3unzgg4exeiaoxanm
       '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
       '@types/three': 0.143.1
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       three: 0.143.0
       typescript: 4.8.2
 
@@ -69,8 +75,10 @@ importers:
     specifiers:
       '@react-three/fiber': ^8.3.1
       '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
       '@types/three': ^0.143.0
       react: ^18.1.0
+      react-dom: ^18.1.0
       react-merge-refs: ^2.0.1
       statery: ^0.6.0-next.2
       three: ^0.143.0
@@ -79,10 +87,12 @@ importers:
       react-merge-refs: 2.0.1
       statery: 0.6.0-next.2_react@18.2.0
     devDependencies:
-      '@react-three/fiber': 8.6.0_react@18.2.0+three@0.143.0
+      '@react-three/fiber': 8.6.0_f72olm6mn3unzgg4exeiaoxanm
       '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
       '@types/three': 0.143.1
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       three: 0.143.0
       typescript: 4.8.2
 
@@ -2031,7 +2041,7 @@ packages:
       - supports-color
     dev: false
 
-  /@react-three/fiber/8.6.0_react@18.2.0+three@0.143.0:
+  /@react-three/fiber/8.6.0_f72olm6mn3unzgg4exeiaoxanm:
     resolution: {integrity: sha512-bdSrjPkcoGYqLsKL5pZHR3SrkzUyxP+VA7wKWhMQPZR+zUYhvw1IpUT+v/d/jlk7sKHlQS8KmGVvM91Ug1QJhA==}
     peerDependencies:
       expo: '>=43.0'
@@ -2056,8 +2066,9 @@ packages:
       '@babel/runtime': 7.18.9
       '@types/react-reconciler': 0.26.7
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       react-reconciler: 0.27.0_react@18.2.0
-      react-use-measure: 2.1.1_react@18.2.0
+      react-use-measure: 2.1.1_biqbaboplfbrettd7655fr4n2y
       scheduler: 0.21.0
       suspend-react: 0.0.8_react@18.2.0
       three: 0.143.0
@@ -2285,6 +2296,12 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react-dom/18.0.6:
+    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+    dependencies:
+      '@types/react': 18.0.17
     dev: true
 
   /@types/react-reconciler/0.26.7:
@@ -5544,6 +5561,16 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: true
+
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
@@ -5563,7 +5590,7 @@ packages:
       scheduler: 0.21.0
     dev: true
 
-  /react-use-measure/2.1.1_react@18.2.0:
+  /react-use-measure/2.1.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-nocZhN26cproIiIduswYpV5y5lQpSQS1y/4KuvUCjSKmw7ZWIS/+g3aFnX3WdBkyuGUtTLif3UTqnLLhbDoQig==}
     peerDependencies:
       react: '>=16.13'
@@ -5571,6 +5598,7 @@ packages:
     dependencies:
       debounce: 1.2.1
       react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /react/18.2.0:
@@ -5804,6 +5832,12 @@ packages:
 
   /scheduler/0.21.0:
     resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: true
+
+  /scheduler/0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
     dev: true
