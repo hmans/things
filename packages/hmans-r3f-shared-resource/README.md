@@ -17,10 +17,10 @@ const SharedMaterial = sharedResource(() => (
 
 const Game = () => (
   <group>
-    {/* Somewhere in your app, create the actual resource.
+    {/* Somewhere in your app, mount the actual resource.
     This element will control the lifetime of the actual resource;
     if it gets unmounted, the resource will be destroyed. */}
-    <SharedMaterial.Resource />
+    <SharedMaterial.Mount />
 
     <Scene />
   </group>
@@ -31,12 +31,12 @@ const Scene = () => (
   <group>
     <mesh position-x={-1.5}>
       <sphereGeometry />
-      <SharedMaterial />
+      <SharedMaterial.Use />
     </mesh>
 
     <mesh position-x={+1.5}>
       <dodecahedronGeometry />
-      <SharedMaterial />
+      <SharedMaterial.Use />
     </mesh>
   </group>
 )
@@ -48,6 +48,6 @@ const Scene = () => (
 
 This will work with materials, geometries, and possibly even other types of objects; but materials and geometries are the most common use cases.
 
-### I hate having an extra `<Foo.Resource />` element, why can't this be automated?
+### I hate having an extra `<Foo.Mount />` element, why can't this be automated?
 
 Automating the creation of the actual resource is not terribly complicated, but I consider it an anti-pattern that _will_ get you into trouble sooner or later, so I decided against including it in this library. Consider being in complete control over the lifecycle of the shared resource a _feature_, not a caveat.
