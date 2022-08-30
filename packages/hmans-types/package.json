@@ -1,0 +1,24 @@
+{
+  "name": "@hmans/types",
+  "private": false,
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hendrik.mans.de"
+  },
+  "description": "A collection of utility types for TypeScript.",
+  "version": "0.0.3",
+  "main": "dist/hmans-types.cjs.js",
+  "module": "dist/hmans-types.esm.js",
+  "types": "dist/hmans-types.cjs.d.ts",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}
