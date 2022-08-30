@@ -33,7 +33,8 @@
     "postinstall": "preconstruct dev && manypkg check",
     "test": "jest --passWithNoTests",
     "ci": "preconstruct validate && manypkg check && pnpm build && pnpm test",
-    "release": "pnpm ci && changeset publish --access public"
+    "ci:version": "changeset version && pnpm install",
+    "ci:release": "pnpm ci && changeset publish --access public"
   },
   "dependencies": {
     "@babel/core": "^7.18.10",
