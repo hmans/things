@@ -127,6 +127,14 @@ importers:
     devDependencies:
       typescript: 4.8.2
 
+  packages/hmans-use-animation-frame:
+    specifiers:
+      '@types/react': ^18.0.17
+      react: ^18.1.0
+    devDependencies:
+      '@types/react': 18.0.17
+      react: 18.2.0
+
   packages/hmans-use-const:
     specifiers:
       '@types/react': ^18.0.17
