@@ -1,5 +1,13 @@
 # @hmans/things
 
+## 0.0.5
+
+### Patch Changes
+
+- 56b1a3e: Added the new `@hmans/use-animation-frame` package.
+- Updated dependencies [56b1a3e]
+  - @hmans/use-animation-frame@0.0.2
+
 ## 0.0.4
 
 ### Patch Changes
