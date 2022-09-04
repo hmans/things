@@ -26,6 +26,7 @@
     "@hmans/r3f-lifecycle": "^0.0.4",
     "@hmans/r3f-shared-resource": "^0.1.0",
     "@hmans/types": "^0.0.3",
+    "@hmans/use-animation-frame": "workspace:^0.0.1",
     "@hmans/use-const": "^0.0.1",
     "@hmans/use-list": "^0.0.1",
     "@hmans/use-rerender": "^0.0.2",

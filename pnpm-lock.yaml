@@ -102,6 +102,7 @@ importers:
       '@hmans/r3f-lifecycle': ^0.0.4
       '@hmans/r3f-shared-resource': ^0.1.0
       '@hmans/types': ^0.0.3
+      '@hmans/use-animation-frame': workspace:^0.0.1
       '@hmans/use-const': ^0.0.1
       '@hmans/use-list': ^0.0.1
       '@hmans/use-rerender': ^0.0.2
@@ -112,6 +113,7 @@ importers:
       '@hmans/r3f-lifecycle': link:../hmans-r3f-lifecycle
       '@hmans/r3f-shared-resource': link:../hmans-r3f-shared-resource
       '@hmans/types': link:../hmans-types
+      '@hmans/use-animation-frame': link:../hmans-use-animation-frame
       '@hmans/use-const': link:../hmans-use-const
       '@hmans/use-list': link:../hmans-use-list
       '@hmans/use-rerender': link:../hmans-use-rerender
