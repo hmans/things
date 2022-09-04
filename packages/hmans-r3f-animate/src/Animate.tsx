@@ -1,6 +1,6 @@
 import { useOnUpdate } from "@hmans/r3f-lifecycle"
 import { GroupProps, RootState } from "@react-three/fiber"
-import React, { useRef } from "react"
+import React, { forwardRef, useImperativeHandle, useRef } from "react"
 import { Group } from "three"
 
 export type AnimateUpdateCallback = (
@@ -13,12 +13,16 @@ export type AnimateProps = GroupProps & {
   fun?: AnimateUpdateCallback
 }
 
-export const Animate = ({ fun, ...props }: AnimateProps) => {
-  const group = useRef<Group>(null!)
+export const Animate = forwardRef<Group, AnimateProps>(
+  ({ fun, ...props }, ref) => {
+    const group = useRef<Group>(null!)
 
-  useOnUpdate((dt, state) => {
-    fun?.(group.current, dt, state)
-  })
+    useOnUpdate((dt, state) => {
+      fun?.(group.current, dt, state)
+    })
 
-  return <group ref={group} {...props} />
-}
+    useImperativeHandle(ref, () => group.current)
+
+    return <group ref={group} {...props} />
+  }
+)
