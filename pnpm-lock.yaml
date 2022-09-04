@@ -98,7 +98,7 @@ importers:
 
   packages/hmans-things:
     specifiers:
-      '@hmans/r3f-animate': ^0.0.4
+      '@hmans/r3f-animate': ^0.0.5
       '@hmans/r3f-lifecycle': ^0.0.4
       '@hmans/r3f-shared-resource': ^0.1.0
       '@hmans/types': ^0.0.3

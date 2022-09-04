@@ -1,5 +1,12 @@
 # @hmans/things
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies [baf19b3]
+  - @hmans/r3f-animate@0.0.5
+
 ## 0.0.5
 
 ### Patch Changes
