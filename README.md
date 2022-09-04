@@ -22,6 +22,8 @@ Install the `@hmans/things` package to get everything that is in this repository
 
 #### React:
 
+- **[@hmans/use-animation-frame](https://github.com/hmans/things/tree/main/packages/hmans-use-animation-frame)**  
+  A React hook for subscribing to the browser's animation frame.
 - **[@hmans/use-const](https://github.com/hmans/things/tree/main/packages/hmans-use-const)**  
   A simple hook that allows you to define a constant value that will never change during the lifetime of the component.
 - **[@hmans/use-list](https://github.com/hmans/things/tree/main/packages/hmans-use-list)**  
