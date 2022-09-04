@@ -1,5 +1,11 @@
 # @hmans/r3f-animate
 
+## 0.0.5
+
+### Patch Changes
+
+- baf19b3: `<Animate>` is now `forwardRef`.
+
 ## 0.0.4
 
 ### Patch Changes
