@@ -1,3 +1,4 @@
+export * from "@hmans/event"
 export * from "@hmans/r3f-animate"
 export * from "@hmans/r3f-lifecycle"
 export * from "@hmans/r3f-shared-resource"
