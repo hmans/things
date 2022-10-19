@@ -10,6 +10,8 @@ Install the `@hmans/things` package to get everything that is in this repository
 
 - **[@hmans/types](https://github.com/hmans/things/tree/main/packages/hmans-types)**  
   A collection of utility types for TypeScript.
+- **[@hmans/queue](https://github.com/hmans/things/tree/main/packages/hmans-queue)**  
+  A tiny queue implementation.
 
 #### @react-three/fiber:
 
