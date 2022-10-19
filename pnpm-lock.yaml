@@ -32,6 +32,15 @@ importers:
       ts-jest: 28.0.8_pbchm4a4dosw4zu4viyh3ll6ca
       typescript: 4.8.2
 
+  packages/hmans-event:
+    specifiers: {}
+
+  packages/hmans-id:
+    specifiers: {}
+
+  packages/hmans-queue:
+    specifiers: {}
+
   packages/hmans-r3f-animate:
     specifiers:
       '@hmans/r3f-lifecycle': ^0.0.4
@@ -100,7 +109,7 @@ importers:
 
   packages/hmans-things:
     specifiers:
-      '@hmans/event': workspace:^0.0.1
+      '@hmans/event': workspace:^0.1.0
       '@hmans/r3f-animate': ^0.0.5
       '@hmans/r3f-lifecycle': ^0.0.4
       '@hmans/r3f-shared-resource': ^0.1.0
