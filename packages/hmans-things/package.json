@@ -22,6 +22,7 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
+    "@hmans/event": "workspace:^0.0.1",
     "@hmans/r3f-animate": "^0.0.5",
     "@hmans/r3f-lifecycle": "^0.0.4",
     "@hmans/r3f-shared-resource": "^0.1.0",
