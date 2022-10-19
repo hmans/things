@@ -1,36 +1,58 @@
-import { createEvent } from "../src"
+import { Event } from "../src"
 
-describe("createEvent", () => {
+describe("Event", () => {
   it("creates a new event", () => {
-    const event = createEvent<number>()
-    expect(event).toBeInstanceOf(Function)
+    const event = new Event()
+    expect(event).toBeDefined()
   })
 
-  it("calling the event will add a listener", () => {
-    const event = createEvent<number>()
-    const listener = jest.fn()
-    event(listener)
+  describe("add", () => {
+    it("adds a listener to the event", () => {
+      const event = new Event()
+      const listener = jest.fn()
+      event.add(listener)
+      expect(event.listeners.size).toBe(1)
+    })
 
-    event.emit(123)
-    expect(listener).toHaveBeenCalledWith(123)
+    it("returns a function that will remove the listener again", () => {
+      const event = new Event()
+      const listener = jest.fn()
+      const remove = event.add(listener)
+      expect(event.listeners.size).toBe(1)
+      remove()
+      expect(event.listeners.size).toBe(0)
+    })
   })
 
-  it("emit will invoke the event", () => {
-    const event = createEvent<number>()
-    const listener = jest.fn()
-    event(listener)
-
-    event.emit(123)
-    expect(listener).toHaveBeenCalledWith(123)
+  describe("remove", () => {
+    it("removes a listener from the event", () => {
+      const event = new Event()
+      const listener = jest.fn()
+      event.add(listener)
+      expect(event.listeners.size).toBe(1)
+      event.remove(listener)
+      expect(event.listeners.size).toBe(0)
+    })
   })
 
-  it("clear will remove all listeners", () => {
-    const event = createEvent<number>()
-    const listener = jest.fn()
-    event(listener)
+  describe("emit", () => {
+    it("emits an event", () => {
+      const event = new Event<string>()
+      const listener = jest.fn()
+      event.add(listener)
+      event.emit("test")
+      expect(listener).toHaveBeenCalledWith("test")
+    })
+  })
 
-    event.clear()
-    event.emit(123)
-    expect(listener).not.toHaveBeenCalled()
+  describe("clear", () => {
+    it("clears all listeners from the event", () => {
+      const event = new Event()
+      const listener = jest.fn()
+      event.add(listener)
+      expect(event.listeners.size).toBe(1)
+      event.clear()
+      expect(event.listeners.size).toBe(0)
+    })
   })
 })
