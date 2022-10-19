@@ -10,6 +10,8 @@ Install the `@hmans/things` package to get everything that is in this repository
 
 - **[@hmans/id](https://github.com/hmans/things/tree/main/packages/hmans-id)**  
   A tiny function that returns a unique numerical identifier for a given object.
+- **[@hmans/event](https://github.com/hmans/things/tree/main/packages/hmans-event)**  
+  A simple event implementation that invokes subscribers when the event is emitted.
 - **[@hmans/types](https://github.com/hmans/things/tree/main/packages/hmans-types)**  
   A collection of utility types for TypeScript.
 - **[@hmans/queue](https://github.com/hmans/things/tree/main/packages/hmans-queue)**  
