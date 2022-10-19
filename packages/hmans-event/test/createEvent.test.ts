@@ -37,11 +37,11 @@ describe("Event", () => {
 
   describe("emit", () => {
     it("emits an event", () => {
-      const event = new Event<string>()
+      const event = new Event<[string, string]>()
       const listener = jest.fn()
       event.add(listener)
-      event.emit("test")
-      expect(listener).toHaveBeenCalledWith("test")
+      event.emit("foo", "bar")
+      expect(listener).toHaveBeenCalledWith("foo", "bar")
     })
   })
 

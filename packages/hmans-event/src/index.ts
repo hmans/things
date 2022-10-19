@@ -1,6 +1,6 @@
-export type Listener<P> = (payload: P) => void
+export type Listener<P extends any[]> = (...payload: P) => void
 
-export class Event<P = void> {
+export class Event<P extends any[] = unknown[]> {
   listeners = new Set<Listener<P>>()
 
   constructor() {
@@ -20,9 +20,9 @@ export class Event<P = void> {
     this.listeners.delete(listener)
   }
 
-  emit(payload: P) {
+  emit(...payload: P) {
     for (const listener of this.listeners) {
-      listener(payload)
+      listener(...payload)
     }
   }
 }
