@@ -1,5 +1,11 @@
 # @hmans/event
 
+## 0.3.0
+
+### Minor Changes
+
+- 261d9d3: **Breaking Change:** The generic for `Event` now must be an array (to support multiple payload arguments.)
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,12 @@
 # @hmans/things
 
+## 0.0.9
+
+### Patch Changes
+
+- Updated dependencies [261d9d3]
+  - @hmans/event@0.3.0
+
 ## 0.0.8
 
 ### Patch Changes
