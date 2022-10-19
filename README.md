@@ -8,6 +8,8 @@ Install the `@hmans/things` package to get everything that is in this repository
 
 #### General
 
+- **[@hmans/id](https://github.com/hmans/things/tree/main/packages/hmans-id)**  
+  A tiny function that returns a unique numerical identifier for a given object.
 - **[@hmans/types](https://github.com/hmans/things/tree/main/packages/hmans-types)**  
   A collection of utility types for TypeScript.
 - **[@hmans/queue](https://github.com/hmans/things/tree/main/packages/hmans-queue)**  
