@@ -1,28 +1,28 @@
 export type Listener<P> = (payload: P) => void
 
-export class Event<P = void> {
-  listeners = new Set<Listener<P>>()
+export const createEvent = <P = void>() => {
+  const listeners = new Set<Listener<P>>()
 
-  constructor() {
-    this.emit = this.emit.bind(this)
+  const remove = (listener: Listener<P>) => {
+    listeners.delete(listener)
   }
 
-  clear() {
-    this.listeners.clear()
+  const add = (listener: Listener<P>) => {
+    listeners.add(listener)
+    return () => remove(listener)
   }
 
-  addListener(listener: Listener<P>) {
-    this.listeners.add(listener)
-    return () => this.removeListener(listener)
+  const emit = (payload: P) => {
+    listeners.forEach((listener) => listener(payload))
   }
 
-  removeListener(listener: Listener<P>) {
-    this.listeners.delete(listener)
+  const clear = () => {
+    listeners.clear()
   }
 
-  emit(payload: P) {
-    for (const listener of this.listeners) {
-      listener(payload)
-    }
-  }
+  add.remove = remove
+  add.emit = emit
+  add.clear = clear
+
+  return add
 }
