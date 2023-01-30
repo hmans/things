@@ -42,7 +42,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@changesets/cli": "^2.24.4",
-    "@manypkg/cli": "^0.19.1",
+    "@manypkg/cli": "^0.20.0",
     "@preconstruct/cli": "^2.1.5",
     "@types/jest": "^29.2.0",
     "jest": "^28.1.3",
